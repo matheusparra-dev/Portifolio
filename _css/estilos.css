@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'helvetika', sans-serif;
+    background-color: #353535;
+    color: rgb(228, 228, 228);
+    letter-spacing: 0.5px;
+}
+
+img.banner{
+    width: 100%;
+}
+
+main{
+    margin: 10px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+p{
+    padding: 10px;
+    line-height: 1.2;
+}
+
+aside{
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+}
