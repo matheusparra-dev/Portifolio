@@ -16,7 +16,7 @@ img.banner{
 
 main{
     margin: 10px;
-    width: 60%;
+    max-width: 60%;
     box-sizing: border-box;
 }
 
@@ -25,8 +25,67 @@ p{
     line-height: 1.2;
 }
 
-aside{
-    width: 30%;
+.video-container{
+    background-color: rgb(83, 83, 83);
+    display: block;
     float: right;
+    max-width: 33%;
     box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+div.postagens{
+    background-color: rgb(83, 83, 83);
+    display: block;
+    float: right;
+    max-width: 33%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.postagens ul{
+    list-style: none;
+}
+
+div.postagens ul li a{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    padding: 5px;
+    display: block;
+    line-height: 0.9;
+    transition: 0.3s;
+}
+
+div.postagens ul li a:hover{
+    background-color: rgb(53, 53, 53);
+    font-weight: bold;
+}
+
+footer#rodape{
+    background-color: rgb(83, 83, 83);
+    color: rgb(228, 228, 228);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    clear: both;
+}
+
+footer#rodape p{
+    margin: 0;
+    padding: 0;
+}
+
+p a{
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
