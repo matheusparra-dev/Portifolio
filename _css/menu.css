@@ -10,9 +10,9 @@ nav.menu{
 }
 
 nav img.logo{
-    height: 35px;
+    width: 200px;
     font-size: 0px;
-    top: 1px;
+    top: -75px;
     position: absolute;
 }
 
