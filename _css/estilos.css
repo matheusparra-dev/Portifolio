@@ -30,11 +30,11 @@ img.scroll{
     left: 50%;
     position: fixed;
     bottom: 0;
+    transition: 1s;
 }
 
 img.rolagem{
-    opacity: 0%;
-    transition: 1s;
+    bottom: -40%; 
 }
 
 div#conteudo{

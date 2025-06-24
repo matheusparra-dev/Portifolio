@@ -37,6 +37,32 @@ nav.menu ul li a:hover{
     transition: 0.5s;
 }
 
+.dropdown-menu a{
+    display: block;
+    padding: 11px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #1a1a1a;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.rolagem .dropdown:hover .dropdown-menu{
+    background-color: #ffffff;
+}
+
 nav.rolagem{
     background: white;
     opacity: 1;
@@ -54,3 +80,4 @@ nav.rolagem ul li a:hover{
     border-radius: 5px;
     opacity: 1;
 }
+
