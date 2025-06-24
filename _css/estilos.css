@@ -29,12 +29,12 @@ img.scroll{
     z-index: 2;
     left: 50%;
     position: fixed;
-    bottom: 0;
+    bottom: 15px;
     transition: 1s;
 }
 
 img.rolagem{
-    bottom: -40%; 
+    bottom: -35%; 
 }
 
 div#conteudo{
