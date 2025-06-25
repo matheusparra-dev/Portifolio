@@ -55,6 +55,47 @@ main{
     border-radius: 5px;    
 }
 
+main#cards-ministros{
+    display: block;
+    margin: 50px;
+    max-width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;    
+}
+
+div.card-esquerdo p{
+    text-align: left;
+    color: rosybrown;
+    font-weight: normal;
+    padding: 10px;
+}
+
+div.card-esquerdo h2{
+    float: left;
+    width: 66%;
+    box-sizing: border-box;
+    margin: 20px 10px 10px 20px;
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+div.card-esquerdo h3{
+    text-align: left;
+}
+
+div.card-esquerdo img{
+    width: 200px;
+    float: right;
+    right: 10px;
+    margin: 10px;
+}
+
 p{
     padding: 10px;
     line-height: 1.2;
