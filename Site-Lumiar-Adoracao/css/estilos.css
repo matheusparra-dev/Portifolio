@@ -70,6 +70,10 @@ div.card-esquerdo{
     display: block;
     text-align: left;
     padding: 10px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(216, 216, 207);
 }
 
 div.card-esquerdo h2{
@@ -79,7 +83,7 @@ div.card-esquerdo h2{
     box-sizing: border-box;
     margin: 20px 10px 10px 20px;
     padding: 10px;
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(41, 46, 59);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-align: center;
@@ -89,7 +93,9 @@ div.card-esquerdo h3{
     display: block;
     width: 66%;
     float: left;
-    margin: 10px 10px 10px 20px;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
 }
 
 div.card-esquerdo img{
@@ -101,17 +107,21 @@ div.card-esquerdo img{
 div.card-esquerdo p{
     display: block;
     text-align: left;
-    color: rgb(218, 241, 245);
     font-weight: normal;
     padding: 10px;
-    margin: 20px 10px 10px 20px;
+    margin: 0px;
     width: 66%;
+    color: black
 }
 
 div.card-direito{
     display: block;
     text-align: left;
     padding: 10px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(216, 216, 207);
 }
 
 div.card-direito h2{
@@ -121,7 +131,7 @@ div.card-direito h2{
     box-sizing: border-box;
     margin: 20px 10px 10px 20px;
     padding: 10px;
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(41, 46, 59);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-align: center;
@@ -131,24 +141,25 @@ div.card-direito h3{
     display: block;
     width: 66%;
     float: right;
-    margin: 10px 10px 10px 20px;
-}
-
-div.card-direito img{
-    width: 200px;
-    float: left;
-
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
 }
 
 div.card-direito p{
     display: block;
     text-align: left;
-    color: rgb(218, 241, 245);
+    color: rgb(0, 0, 0);
     font-weight: normal;
     padding: 10px;
-    margin: 20px 10px 10px 0px;
+    margin: 0px;
     width: 66%;
     float: right;
+}
+
+div.card-direito img{
+    width: 200px;
+    float: left;
 }
 
 p{
@@ -212,7 +223,6 @@ div.menu-postagens ul li a:hover{
     background-color: rgb(53, 53, 53);
     font-weight: bold;
 }
-
 
 footer#rodape{
     background-color: rgb(83, 83, 83);
