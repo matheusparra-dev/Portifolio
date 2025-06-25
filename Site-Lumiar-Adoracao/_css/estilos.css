@@ -192,3 +192,9 @@ footer div#developer a:hover{
     text-decoration: underline;
     transition: 0.3s;
 }
+
+#developer span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    float: right;
+}
