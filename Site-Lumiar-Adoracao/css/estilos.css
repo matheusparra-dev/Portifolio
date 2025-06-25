@@ -57,24 +57,23 @@ main{
 
 main#cards-ministros{
     display: block;
-    margin: 50px;
+    margin: 70px 30px 20px 30px;
     max-width: 90%;
     box-sizing: border-box;
-    text-align: center;
     background-color: rgb(83, 83, 83);
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
-div.card-esquerdo p{
+div.card-esquerdo{
+    display: block;
     text-align: left;
-    color: rosybrown;
-    font-weight: normal;
     padding: 10px;
 }
 
 div.card-esquerdo h2{
+    display: block;
     float: left;
     width: 66%;
     box-sizing: border-box;
@@ -83,17 +82,73 @@ div.card-esquerdo h2{
     background-color: rgb(83, 83, 83);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    text-align: center;
 }
 
 div.card-esquerdo h3{
-    text-align: left;
+    display: block;
+    width: 66%;
+    float: left;
+    margin: 10px 10px 10px 20px;
 }
 
 div.card-esquerdo img{
     width: 200px;
     float: right;
-    right: 10px;
-    margin: 10px;
+
+}
+
+div.card-esquerdo p{
+    display: block;
+    text-align: left;
+    color: rgb(218, 241, 245);
+    font-weight: normal;
+    padding: 10px;
+    margin: 20px 10px 10px 20px;
+    width: 66%;
+}
+
+div.card-direito{
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+div.card-direito h2{
+    display: block;
+    float: right;
+    width: 66%;
+    box-sizing: border-box;
+    margin: 20px 10px 10px 20px;
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+div.card-direito h3{
+    display: block;
+    width: 66%;
+    float: right;
+    margin: 10px 10px 10px 20px;
+}
+
+div.card-direito img{
+    width: 200px;
+    float: left;
+
+}
+
+div.card-direito p{
+    display: block;
+    text-align: left;
+    color: rgb(218, 241, 245);
+    font-weight: normal;
+    padding: 10px;
+    margin: 20px 10px 10px 0px;
+    width: 66%;
+    float: right;
 }
 
 p{
