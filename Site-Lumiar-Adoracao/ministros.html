@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ministros - Lumiar Adoração</title>
+    <title>Lumiar Adoração</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/ministros.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="./js/script.js"></script>
     
 </head>
@@ -16,31 +18,48 @@
     <header id="cabecalho">
 
 
-    <nav class="menu">
+        <nav class="menu">
     
-     <a href="./index-louvor.html" class="logo-link">
-        <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
-     </a>
+            <a href="index-louvor.html" class="logo-link">
+            <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
+            </a>
 
         <ul>
             <li><a href="index-louvor.html">Início</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="ministrtos.html">Ministros</a></li>
+            <li><a href="ministros.html">Ministros</a></li>
             <li class="dropdown"><a href="">Documentos</a>
                 <div class="dropdown-menu">
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Regimento</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Cifras</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Planilha de Presença</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Escala Atual</a>
+                    <a href="#" onclick="alert('Estamos trabalhando para disponibilizar nosso regimento o mais breve possível!.')">Regimento</a>
+                    <a href="https://1drv.ms/f/c/21f7b4fcd72cd641/Eu4ppYTs_JJFuCOc13R0rUABqTNfOvq3fJ1r0-l1a5F5ew?e=qgzcQQ" onclick="alert('Você está sendo direcionado para um repositório pessoal. Suas contribuições de correção ou novas músicas serão bem-vindas. Basta enviar os documentos editados por você diretamente ao Matheus')" target="_blank">Cifras</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1-6tsYSpHjQRhKibiwUHba8NttN4GXELht30W7jMFrQA/edit?gid=0#gid=0" target="_blank">Planilha de Presença</a>
+                    <a href="./documentos/Escala atual.pdf" target="_blank">Escala Atual</a>
                 </div>
             </li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-    </nav>
+        </nav>
+
+        <nav class="menu-mobile">
+    
+            <a href="index-louvor.html" class="logo-link">
+            <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
+            </a>
+            <i id="icone-menu" class="material-symbols-outlined" onclick="botaomenu()">menu</i>
+            <menu id="menuretratil">
+                <ul>
+                    <li><a href="index-louvor.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="ministros.html">Ministros</a></li>
+                    <li><a href="links.html">Links Úteis</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+            </menu>
+        </ul>
+        </nav>
     </header>
 
 <div id="conteudo">
-        <section id="boas-vindas">
+
     <main id="cards-ministros">
         <section>
             <br>
@@ -52,9 +71,10 @@
  
         <section id="Ministro1">
             <div class="card-esquerdo">
+                
                 <h2>Alfredo - O Fred</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Alfredo" class="foto-alfredo">
                 <h3>Baterista</h3>
+                <img src="https://picsum.photos/200/200" alt="Alfredo" class="foto-alfredo">´
                 <p>Ministro de louvor e adoração, Alfredo é conhecido por sua habilidade excepcional na bateria. Com uma energia contagiante, ele tem se apresentado em diversas igrejas e eventos, levando a mensagem de fé e esperança através de sua música.</p>
             </div>
         </section>
@@ -62,8 +82,8 @@
         <section id="ministro2">
             <div class="card-direito">
                 <h2>Amanda Parra</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Amanda" class="foto-amanda">
                 <h3>Cantora</h3>
+                <img src="https://picsum.photos/200/200" alt="Amanda" class="foto-amanda">
                 <p>Amanda Parra é uma talentosa cantora e compositora, conhecida por sua voz poderosa e letras inspiradoras. Ela tem se apresentado em várias igrejas e eventos, tocando o coração de muitos com sua música. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             </div>
         </section>
@@ -71,8 +91,8 @@
         <section id="Ministro3">
             <div class="card-esquerdo">
                 <h2>Fabio</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Fabio" class="foto-fabio">
                 <h3>Cantor e Violonista</h3>
+                <img src="https://picsum.photos/200/200" alt="Fabio" class="foto-fabio">
                 <p>Fabio é um cantor e violonista talentoso, conhecido por sua habilidade em tocar violão e sua voz suave. Ele tem se apresentado em várias igrejas e eventos, trazendo uma atmosfera de adoração e louvor com suas músicas.</p>
             </div>
         </section>
@@ -80,8 +100,8 @@
         <section id="ministro4">
             <div class="card-direito">
                 <h2>Felipe</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Felipe" class="foto-felipe">
                 <h3>Baterista</h3>
+                <img src="https://picsum.photos/200/200" alt="Felipe" class="foto-felipe">
                 <p>Felipe é um baterista talentoso, conhecido por sua habilidade em tocar bateria e sua paixão pela música. Ele tem se apresentado em várias igrejas e eventos, trazendo uma energia contagiante e uma atmosfera de adoração com suas batidas.</p>
             </div>
         </section>
@@ -89,8 +109,8 @@
         <section id="Ministro5">
             <div class="card-esquerdo">
                 <h2>Gilvania</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Gilvania" class="foto-gilvania">
                 <h3>Cantora</h3>
+                <img src="https://picsum.photos/200/200" alt="Gilvania" class="foto-gilvania">
                 <p>Gilvania é uma talentosa cantora e compositora, conhecida por sua voz poderosa e letras inspiradoras. Ela tem se apresentado em várias igrejas e eventos, tocando o coração de muitos com sua música. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
@@ -98,8 +118,8 @@
         <section id="ministro6">
             <div class="card-direito">
                 <h2>Jaqueline</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Jaqueline" class="foto-jaqueline">
                 <h3>Cantora e Violonista</h3>
+                <img src="https://picsum.photos/200/200" alt="Jaqueline" class="foto-jaqueline">
                 <p>Jaqueline é uma cantora e violonista talentosa, conhecida por sua habilidade em tocar violão e sua voz suave. Ela tem se apresentado em várias igrejas e eventos, trazendo uma atmosfera de adoração e louvor com suas músicas.</p>
             </div>
         </section>
@@ -107,27 +127,28 @@
         <section id="Ministro7">
             <div class="card-esquerdo">
                 <h2>Lucas Costa</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Lucas Costa" class="foto-lucascosta">
                 <h3>Cantor e Violonista</h3>
+                <img src="https://picsum.photos/200/200" alt="Lucas Costa" class="foto-lucascosta">
                 <p>Lucas Costa é um cantor e violonista talentoso, conhecido por sua habilidade em tocar violão e sua voz suave. Ele tem se apresentado em várias igrejas e eventos, trazendo uma atmosfera de adoração e louvor com suas músicas.</p>
             </div>
         </section>
 <br><br>
         <section id="ministro8">
             <div class="card-direito">
-                <h2>Jessica</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Jessica" class="foto-jessica">
-                <h3>Cantora</h3>
-                <p>Jessica é uma talentosa cantora e compositora, conhecida por sua voz poderosa e letras inspiradoras. Ela tem se apresentado em várias igrejas e eventos, tocando o coração de muitos com sua música.</p>
+                <h2>Lucas Walace</h2><br>
+                <h3>Cantor e Contrabaixista</h3>
+                <img src="https://picsum.photos/200/200" alt="Lucas Walace" class="foto-lucaswalace">
+                <p>Lucas Walace é um cantor e contrabaixista talentoso, conhecido por sua habilidade em tocar contrabaixo e sua voz suave. Ele tem se apresentado em várias igrejas e eventos, trazendo uma atmosfera de adoração e louvor com suas músicas.</p>
+                
             </div>
         </section>
 <br><br>
         <section id="Ministro9">
             <div class="card-esquerdo">
-                <h2>Lucas Walace</h2><br>
-                <img src="https://picsum.photos/200/200" alt="Lucas Walace" class="foto-lucaswalace">
-                <h3>Cantor e Contrabaixista</h3>
-                <p>Lucas Walace é um cantor e contrabaixista talentoso, conhecido por sua habilidade em tocar contrabaixo e sua voz suave. Ele tem se apresentado em várias igrejas e eventos, trazendo uma atmosfera de adoração e louvor com suas músicas.</p>
+                <h2>Jessica</h2><br>
+                <h3>Cantora</h3>
+                <img src="https://picsum.photos/200/200" alt="Jessica" class="foto-jessica">
+                <p>Jessica é uma talentosa cantora e compositora, conhecida por sua voz poderosa e letras inspiradoras. Ela tem se apresentado em várias igrejas e eventos, tocando o coração de muitos com sua música.</p>
             </div>
         </section>
 <br><br>

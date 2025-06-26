@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Lumiar Adoração</title>
+    <title>Sobre Nós - Lumiar Adoração</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="./js/script.js"></script>
     
 </head>
@@ -16,11 +17,11 @@
     <header id="cabecalho">
 
 
-    <nav class="menu">
+        <nav class="menu">
     
-     <a href="index-louvor.html" class="logo-link">
-        <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
-     </a>
+            <a href="index-louvor.html" class="logo-link">
+            <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
+            </a>
 
         <ul>
             <li><a href="index-louvor.html">Início</a></li>
@@ -28,22 +29,45 @@
             <li><a href="ministros.html">Ministros</a></li>
             <li class="dropdown"><a href="">Documentos</a>
                 <div class="dropdown-menu">
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Regimento</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Cifras</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Planilha de Presença</a>
-                    <a href="documentos/regimento_interno.pdf" target="_blank">Escala Atual</a>
+                    <a href="#" onclick="alert('Estamos trabalhando para disponibilizar nosso regimento o mais breve possível!.')">Regimento</a>
+                    <a href="https://1drv.ms/f/c/21f7b4fcd72cd641/Eu4ppYTs_JJFuCOc13R0rUABqTNfOvq3fJ1r0-l1a5F5ew?e=qgzcQQ" onclick="alert('Você está sendo direcionado para um repositório pessoal. Suas contribuições de correção ou novas músicas serão bem-vindas. Basta enviar os documentos editados por você diretamente ao Matheus')" target="_blank">Cifras</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1-6tsYSpHjQRhKibiwUHba8NttN4GXELht30W7jMFrQA/edit?gid=0#gid=0" target="_blank">Planilha de Presença</a>
+                    <a href="./documentos/Escala atual.pdf" target="_blank">Escala Atual</a>
                 </div>
             </li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-    </nav>
+        </nav>
+
+        <nav class="menu-mobile">
+    
+            <a href="index-louvor.html" class="logo-link">
+            <img src="./imagens/logo-home.png" alt="Logo Lumiar Adoração" class="logo"/>
+            </a>
+            <i id="icone-menu" class="material-symbols-outlined" onclick="botaomenu()">menu</i>
+            <menu id="menuretratil">
+                <ul>
+                    <li><a href="index-louvor.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="ministros.html">Ministros</a></li>
+                    <li><a href="links.html">Links Úteis</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+            </menu>
+        </ul>
+        </nav>
     </header>
 
-<div id="conteudo">
-    <main>
-        <section id="boas-vindas">
-            <br>
-            <h1>Bem-vindo à Lumiar Adoração</h1>
+    <div class="container-banner">
+        <img src="./imagens/banner.jpg" alt="Banner Lumiar Adoração" class="banner"/>
+
+        <a href="index-louvor.html#boas-vindas"><img src="./imagens/scroll.png" alt="Figura de rolagem" class="scroll"/></a>
+
+        <img src="./imagens/logo-home.png" alt="Figura de rolagem" class="logo-banner"/>
+    </div>
+
+    <section id="boas-vindas">
+        <h1>Bem-vindo ao Lumiar Adoração</h1>
+    </section>
             <br>
             <h2>Sobre</h2>
             <p>Página em construção</p>
