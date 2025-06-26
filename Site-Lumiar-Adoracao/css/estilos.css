@@ -102,8 +102,6 @@ div.menu-postagens{
     max-width: 400px;
 }
 
-
-
 div.menu-postagens ul li a{
     text-decoration: none;
     color: rgb(228, 228, 228);
@@ -273,7 +271,7 @@ div.card-direito img{
 
 } /*Fechamento Media query para telas maiores que 700px*/
 
-/*Abertura Media query para telas menores que 1050px e maiores que 700px*/
+/*Abertura Media query de ajustes para telas menores que 1050px e maiores que 700px*/
 @media (max-width: 1049px) {
     .instagram-container{
     background-color: rgb(83, 83, 83);
@@ -339,6 +337,5 @@ div.menu-postagens{
 div.menu-postagens ul{
     list-style: none;
 }
-
 
 } /*Fechamento Media query para telas menores que 1050px*/
