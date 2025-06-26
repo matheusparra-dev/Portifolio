@@ -1,4 +1,6 @@
-*{
+@media (min-width: 701px) {
+
+    *{
     margin: 0;
     padding: 0;
     
@@ -42,7 +44,6 @@ div#conteudo{
     margin: 0 auto;
 }
 
-
 main{
     margin: 20px 10px 20px 20px;
     max-width: 60%;
@@ -54,6 +55,112 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;    
 }
+
+p{
+    padding: 10px;
+    line-height: 1.2;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+p a{
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+h2{
+    line-height: 1.5;
+    margin: 10px;
+    
+}
+   
+.instagram-container{
+    background-color: rgb(83, 83, 83);
+    display: relative;
+    float: right;
+    width: 33%;
+    box-sizing: border-box;
+    margin: 20px 20px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+} 
+
+/*Configurações menu postagens*/
+div.menu-postagens{
+    float: right;
+    background-color: rgb(83, 83, 83);
+    width: 33%;   
+    box-sizing: border-box;
+    margin: 20px 20px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+
+
+div.menu-postagens ul li a{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    padding: 5px;
+    display: block;
+    line-height: 0.9;
+    transition: 0.3s;
+}
+
+div.menu-postagens ul li a:hover{
+    background-color: rgb(53, 53, 53);
+    font-weight: bold;
+}
+
+/*Configurações do footer*/
+
+footer#rodape{
+    background-color: rgb(83, 83, 83);
+    color: rgb(228, 228, 228);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+}
+
+footer#rodape p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer div#developer{
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+}
+
+footer div#developer a{
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+}
+
+footer div#developer a:hover{
+    color: rgb(207, 207, 207);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#developer span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    float: right;
+}
+
+/*Configurações aba ministros*/
 
 main#cards-ministros{
     display: block;
@@ -96,6 +203,7 @@ div.card-esquerdo h3{
     margin: 0px;
     padding: 10px;
     color: rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 div.card-esquerdo img{
@@ -144,6 +252,7 @@ div.card-direito h3{
     margin: 0px;
     padding: 10px;
     color: rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 div.card-direito p{
@@ -162,104 +271,74 @@ div.card-direito img{
     float: left;
 }
 
-p{
-    padding: 10px;
-    line-height: 1.2;
-    text-align: justify;
-    margin: 10px;
-    padding: 10px;
-}
+} /*Fechamento Media query para telas maiores que 700px*/
 
-p a{
-    color: rgb(228, 228, 228);
-    text-decoration: none;
-    text-decoration: underline;
-}
-
-h2{
-    line-height: 1.5;
-    margin: 10px;
-    
-}
-.instagram-container{
+/*Abertura Media query para telas menores que 1050px e maiores que 700px*/
+@media (max-width: 1049px) {
+    .instagram-container{
     background-color: rgb(83, 83, 83);
-    display: block;
-    float: right;
-    width: 33%;
+    display: relative;
+    float: left;
+    width: auto;
     box-sizing: border-box;
-    margin: 20px 20px 10px 10px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    min-width: 346px;
+    margin: 10px 10px 20px 20px;
+    max-width: 60%;
 }
 
+main{
+    margin: 10px 5px 10px 20px;
+    padding: 5px;
+}
+
+main#cards-ministros{
+    margin: 70px 10px 20px 10px;
+    max-width: 98%;
+}
+
+main#cards-ministros h2, h3, p{
+    width: auto%;
+    margin: 20px 10px 10px 10px;
+    padding: 5px;
+}
+    
+        main#cards-ministros{
+            margin: 70px 10px 20px 10px;
+            max-width: 98%;
+        }
+
+    @media (max-width: 720px) {
+        
+        div.card-direito img{
+        width: 180px;
+        float: left;
+} 
+
+        div.card-esquerdo img{
+        width: 180px;
+        float: right;
+} }
+
+
+/*Configurações menu postagens*/
 div.menu-postagens{
     float: right;
     background-color: rgb(83, 83, 83);
-    width: 33%;   
+    width: auto;   
     box-sizing: border-box;
-    margin: 20px 20px 10px 10px;
-    padding: 10px;
+    margin: 10px 10px 10px 5px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    max-width: 33%;
 }
 
 div.menu-postagens ul{
     list-style: none;
 }
 
-div.menu-postagens ul li a{
-    text-decoration: none;
-    color: rgb(228, 228, 228);
-    padding: 5px;
-    display: block;
-    line-height: 0.9;
-    transition: 0.3s;
-}
 
-div.menu-postagens ul li a:hover{
-    background-color: rgb(53, 53, 53);
-    font-weight: bold;
-}
-
-footer#rodape{
-    background-color: rgb(83, 83, 83);
-    color: rgb(228, 228, 228);
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: -10px;
-    width: 100%;
-    clear: both;
-    box-sizing: border-box;
-}
-
-footer#rodape p{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-footer div#developer{
-    color: rgb(160, 159, 159);
-    text-decoration: none;
-}
-
-footer div#developer a{
-    color: rgb(160, 159, 159);
-    text-decoration: none;
-}
-
-footer div#developer a:hover{
-    color: rgb(207, 207, 207);
-    text-decoration: underline;
-    transition: 0.3s;
-}
-
-#developer span{
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    float: right;
-}
+} /*Fechamento Media query para telas menores que 1050px*/
