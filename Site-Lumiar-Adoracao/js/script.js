@@ -12,9 +12,36 @@ window.addEventListener("scroll", function() {
     let nav = document.querySelector('.scroll')
     nav.classList.toggle('rolagem',window.scrollY > 0)
 })
-    function botaomenu() {
-        recolher();
-        sebotaomenu();
+    /* function botaomenu() {
+        if (menuretratil.style.display == 'block') {
+            menuretratil.style.display = 'none'
+        } else {
+            menuretratil.style.display = 'block'
+        }
+    } */
+
+    
+    function sebotaomenu() {
+        const elemento = document.getElementById("icone-menu");
+        const conteudo = elemento.innerText;
+        if (conteudo === 'menu') {
+            recolher();
+            xbotaomenu();
+        } else {
+            recolher();
+            mbotaomenu();
+        }
+    }
+
+/* TUDO DAQUI PRA BAIXO ESTA FUNCIONANDO */
+    function xbotaomenu() {
+        const elemento = document.getElementById("icone-menu");
+        elemento.innerHTML = 'close';
+    }
+
+    function mbotaomenu() {
+        const elemento = document.getElementById("icone-menu");
+        elemento.innerHTML = 'menu';
     }
 
     function recolher() {
@@ -23,24 +50,4 @@ window.addEventListener("scroll", function() {
         } else {
             menuretratil.style.display = 'block'
         }
-    }
-
-    function sebotaomenu() {
-        const elemento = document.getElementById("icone-menu");
-        if (elemento == "menu") {
-            xbotaomenu();
-        } else {
-            mbotaomenu();
-        }
-    }
-
-
-    function xbotaomenu() {
-        const elemento2 = document.getElementById("icone-menu");
-        elemento2.innerHTML = "close";
-    }
-
-    function mbotaomenu() {
-        const elemento2 = document.getElementById("icone-menu");
-        elemento2.innerHTML = "menu";
     }
