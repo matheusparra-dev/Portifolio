@@ -185,12 +185,9 @@ div.card-direito img{
 @media (max-width: 700px) {
 
 
-div#conteudo {
-    margin: 90px 0px 0px 0px
-}
-
 section#boas-vindas{
-    margin: 10px;
+    margin: 90px auto 0px auto;
+    padding: 0px;
 }
 
 main#cards-ministros{
