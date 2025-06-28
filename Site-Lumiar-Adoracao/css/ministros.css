@@ -163,65 +163,111 @@ div.card-direito img{
 /* Configuração para telas mobile*/
 @media (max-width: 700px) {
     
+/*Configurações aba ministros*/
+
 main#cards-ministros{
     display: block;
-    position: absolute;
-    margin: 0px;
-    top: 100px;
+    margin: 70px 10px 20px 10px;
+    max-width: 98%;
     box-sizing: border-box;
-    max-width: 100%;
-    background-color: #535353;
+    background-color: rgb(83, 83, 83);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
-div.card-esquerdo {
-    height: 500px;
+main#cards-ministros h1 {
 }
 
-div.card-direito {
+
+.card-esquerdo{
+    display: relative;
+    text-align: left;
+    padding: 10px;
     height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(216, 216, 207);
 }
+
+.card-direito{
+    display: relative;
+    text-align: left;
+    padding: 10px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(216, 216, 207);
+}
+
 
 div.card-esquerdo h2{
+    float: left;
     width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(41, 46, 59);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 div.card-direito h2{
-    width:  90%;
+    float: left;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(41, 46, 59);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 div.card-esquerdo h3{
-    display: inline;
-    max-width: none;
-    width: auto;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 div.card-direito h3{
-    display: inline;
-    max-width: none;
-    width: auto;
+    margin: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+div.card-esquerdo img{
+    width: 180px;
+    float: left;
+    padding: 10px;
+}
+
+div.card-direito img{
+    width: 180px;
+    float: left;
+    padding: 10px;
 }
 
 div.card-esquerdo p{
-    display: inline;
-    max-width: none;
-    width: auto;
+    text-align: right;
+    font-weight: normal;
+    padding: 5px;
+    margin: 0px;
+    color: black
 }
 
 div.card-direito p{
-    display: inline;
-    max-width: none;
-    width: auto;
-
-div.card-direito  img{
-    display: inline;
-    float: none;
-    width: 175px;    
+    text-align: right;
+    font-weight: normal;
+    padding: 5px;
+    margin: 0px;
+    color: black
 }
 
-div.card-esquerdo img {
-    float: none;
-    width: 175px;  
-    display: inline;  
-}
 }
 
