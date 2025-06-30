@@ -4,7 +4,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 body{
@@ -30,7 +29,7 @@ img.scroll{
     width: 10%;
     display: block;
     z-index: 2;
-    left: 50%;
+    left: 48%;
     position: fixed;
     bottom: 15px;
     transition: 1s;
@@ -90,7 +89,6 @@ h2{
    
 .instagram-container{
     background-color: rgb(83, 83, 83);
-    display: relative;
     float: right;
     width: 33%;
     box-sizing: border-box;
@@ -112,11 +110,35 @@ div.menu-postagens{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 400px;
+    max-height: 30vh;
+    overflow-y: scroll;
 }
+
+div.barrabusca {
+    float: right;
+    background-color: rgb(83, 83, 83);
+    width: 33%;   
+    box-sizing: border-box;
+    margin: 20px 20px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+div.menu-postagens::-webkit-scrollbar { 
+  display: none;
+} 
 
 div.menu-postagens ul{
     padding: 10px;
     margin: 10px;
+
+}
+
+div.menu-postagens h2{
+    padding: 10px;
+
 }
 
 div.menu-postagens ul li a{
@@ -125,12 +147,14 @@ div.menu-postagens ul li a{
     padding: 5px;
     display: block;
     line-height: 0.9;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 div.menu-postagens ul li a:hover{
     background-color: rgb(53, 53, 53);
-    font-weight: bold;
+    color: white;
+    transform: scale(1.05);
+    border-radius: 4px;
 }
 
 /*Configurações do footer*/
@@ -188,34 +212,17 @@ footer div#developer a:hover{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    min-width: 346px;
-    margin: 10px 10px 20px 20px;
+    min-width: 355px;
     max-width: 60%;
     }
-
-    main{
-    margin: 10px 5px 10px 20px;
-    padding: 5px;
+    
+    main {
+        max-width: 95%;
     }
-
-    @media (min-width: 701px ) {
-        /*Configurações menu postagens*/
-        div.menu-postagens{
-            float: right;
-            background-color: rgb(83, 83, 83);
-            width: auto;   
-            box-sizing: border-box;
-            margin: 10px 10px 10px 5px;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            max-width: 33%;
-        }
+    /*Configurações menu postagens*/
+    div.menu-postagens{
+    display: none;
     }
-
-    div.menu-postagens ul{
-        list-style: none;
-    } 
 
 } /*Fechamento Media query para telas menores que 1050px e maiores que 700px*/
 
@@ -263,6 +270,7 @@ main{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    min-height: 100px;
 }
 
 section#boas-vindas h1{
@@ -324,7 +332,7 @@ h2{
 background-color: rgb(83, 83, 83);
 width: 100%;
 box-sizing: border-box;
-margin: 10px 0px 10px 0px;
+margin: 5px 0px 5px 0px;
 padding: 10px 10px 10px 10px;
 border-radius: 5px;
 min-width: 346px;
@@ -334,29 +342,8 @@ text-align: center;
 /*Configurações menu postagens*/
 
 .menu-postagens{
-    background-color: rgb(83, 83, 83);
-    width: 100%;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
+    display: none;
 }
-
-
-.menu-postagens ul{
-    padding: 10px;
-    margin: 10px;
-    list-style:circle;
-}
-
-.menu-postagens ul li a{
-    color: rgb(228, 228, 228);
-    padding: 5px;
-    line-height: 1.5;
-    transition: 0.3s;
-}
-
 
 /*Configurações do footer*/
 
@@ -371,6 +358,7 @@ footer#rodape{
     width: 100%;
     clear: both;
     box-sizing: border-box;
+    margin: 15px 0px;
 }
 
 footer#rodape p{
