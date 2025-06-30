@@ -19,6 +19,8 @@ section#boas-vindas{
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    width: 90%;
+    text-align: center;
 }
 
 div.card-esquerdo{
@@ -135,19 +137,6 @@ div.card-direito img{
 
 /*Abertura Media query de ajustes para telas menores que 1050px e maiores que 700px*/
 @media (max-width: 1049px ) and (min-width: 701px) {
-    
-    .instagram-container{
-    background-color: rgb(83, 83, 83);
-    float: left;
-    width: auto;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    min-width: 346px;
-    margin: 10px 10px 20px 20px;
-    max-width: 60%;
-    }
 
     main{
     margin: 10px 5px 10px 20px;

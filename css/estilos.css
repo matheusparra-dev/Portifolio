@@ -1,10 +1,13 @@
-/* Abertura Media query para telas maiores que 700px */
+
+
+/* Abertura Media query para DESKTOP (telas maiores que 700px) */
 @media (min-width: 701px) {
 
 *{
     margin: 0;
     padding: 0;
 }
+
 
 body{
     font-family: 'helvetika', sans-serif;
@@ -56,6 +59,7 @@ div#conteudo{
 }
 
 main{
+    width: calc(99% - 400px);
     margin: 20px 10px 20px 20px;
     max-width: 60%;
     box-sizing: border-box;
@@ -64,7 +68,8 @@ main{
     background-color: rgb(83, 83, 83);
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;    
+    border-radius: 5px;
+    min-height: 50vh;
 }
 
 p{
@@ -83,27 +88,28 @@ p a{
 
 h2{
     line-height: 1.5;
-    margin: 10px;
-    
+    margin: 10px;  
 }
-   
-.instagram-container{
-    background-color: rgb(83, 83, 83);
+
+aside {
     float: right;
     width: 33%;
+    min-width: 375px;
+    overflow: hidden;
+}
+
+.instagram-container{
     box-sizing: border-box;
     margin: 20px 20px 10px 10px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 400px;
+    background-color: rgb(83, 83, 83);
 } 
 
-/*Configurações menu postagens*/
 div.menu-postagens{
-    float: right;
     background-color: rgb(83, 83, 83);
-    width: 33%;   
     box-sizing: border-box;
     margin: 20px 20px 10px 10px;
     padding: 10px;
@@ -115,9 +121,7 @@ div.menu-postagens{
 }
 
 div.barrabusca {
-    float: right;
     background-color: rgb(83, 83, 83);
-    width: 33%;   
     box-sizing: border-box;
     margin: 20px 20px 10px 10px;
     padding: 10px;
@@ -133,7 +137,6 @@ div.menu-postagens::-webkit-scrollbar {
 div.menu-postagens ul{
     padding: 10px;
     margin: 10px;
-
 }
 
 div.menu-postagens h2{
@@ -199,34 +202,9 @@ footer div#developer a:hover{
     float: right;
 }
 
-} /*Fechamento Media query para telas maiores que 700px*/
+} /*Fechamento Media query para telas DESKTOP*/
 
-/*Abertura Media query de ajustes para telas menores que 1050px e maiores que 700px*/
-@media (max-width: 1049px ) and (min-width: 701px) {
-    
-    .instagram-container{
-    background-color: rgb(83, 83, 83);
-    float: left;
-    width: auto;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    min-width: 355px;
-    max-width: 60%;
-    }
-    
-    main {
-        max-width: 95%;
-    }
-    /*Configurações menu postagens*/
-    div.menu-postagens{
-    display: none;
-    }
-
-} /*Fechamento Media query para telas menores que 1050px e maiores que 700px*/
-
-/* Abertura Media query para Dispositivos móveis (telas <700px) */ 
+/* Abertura Media query para DISPOSITIVOS MOVEIS (telas <700px) */ 
 @media (max-width: 700px) {
     *{
     margin: 0;
@@ -270,7 +248,7 @@ main{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    min-height: 100px;
+    min-height: 130px;
 }
 
 section#boas-vindas h1{
@@ -284,6 +262,11 @@ section#boas-vindas h1{
     padding: 5px;
     color: rgb(0, 0, 0);
 }
+
+aside {
+    display: none;
+}
+
 
 section#ultimas-publicacoes h2{
     margin: 5px 0px 5px 0px;
@@ -325,8 +308,6 @@ h2{
     line-height: 1.5;
     margin: 10px;  
 }
-
-
 
 .instagram-container{
 background-color: rgb(83, 83, 83);
